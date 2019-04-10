@@ -71,7 +71,7 @@ import DiscordLogo from '@/assets/images/discord-logo.svg'
 export default {
   computed: {
     currentlyInsideDocs() {
-      return this.$route.path.startsWith("/docs")
+      return this.$route.path ? this.$route.path.startsWith("/docs") : false
     },
   },
   components: {
